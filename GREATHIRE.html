@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js">
+</script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js">
+</script>
+  <style>
+    .background{  
+      background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ8NDQ0NFREWFhURFRUYHSggGBolGxUTITEhJSkrOjo6Fx8/ODMtNyg5LjcBCgoKDQ0NFQ0PDy0ZFRkrKy0rLSsrKysrLSsrKys3Ky0rKzctLS0tKy0rKzcrLS03LTctLSstNy0rLS0tLS0rLf/AABEIALcBEwMBIgACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAABAAIDBAf/xAAYEAEBAQEBAAAAAAAAAAAAAAAAARESAv/EABgBAQEBAQEAAAAAAAAAAAAAAAEAAgYF/8QAGBEBAQEBAQAAAAAAAAAAAAAAABEBEgL/2gAMAwEAAhEDEQA/APnfmOkg8xuOgzHgbpjUEajTGqFQxpnSkSyikkiiQCigkUgkUUCigCkEkUgkUjRiIBqxWIjWs1mxmt1miNZrFjFdKzYzGq53ymyzGnkkaikakbW6pGooSwoUWhqKJZSKQWFFIHCiEiUKEUgkUkDhSARxJJYUkMDSBZxUiogY0sBxjGbHSs1mN1zTWIRp5pGpBGpDmLdWNKQtM1QowgHCkEcWHCKsWHDiFGFYcIoJxILFhWJAlIBFJJJJJFJBEA0BrAlRiqxAis2Ns2BqsJvEI08sjUUhJ3UVI0WRhw4SBhw4cQEOHDCKFhKAwnDhFZw4cOIVnDhwpVnE0kGVjSSZxY0kgikmUUCBjSxFkY3gwFnBY3iwNOaawJV5mpBGk0jFCQpDIoSEUUysKkOEI4jiFBwnCAsaxYhRixrFiVZxY1gxCjFhSNZTSSZJQQwNYsRGDGsWAsrGsWIs4Maw2BvGMTWIF44YCUYUSEYjEyijCFCjEEUSFI1IjEypDhhxJnFjWJJnBjWJBnA0EgikQsaSQRwhoYGog0KMKBwRYiNbxjCUE8MMRbChUMQUagJZTQhIJBiBMUKZMMDUQMawQpLAQkBSCECkgikQUgUokDhFIDVWBBKpDRojWadiZQh6eWNCGNLTDFCQjFCmUUiDClEDDESE0CmTCEkUEkkkggUiEQkkkkkkCgkGkEEkKgGggUnCNQRotIqGFlFYcQRRwgGIoKFFBGIkJIoJJJJJBBFYkEQiEUkEQiERgIFIqTINAOBJBpzjUikakaWrDikOEVYcUjUiZrOHGpDiFZkONSHCKzixrFiFGHDhxCs4caxSJDFjWKRFnFjeLkKMYsb5XKMYwY6YsSjnixuxYg54sdORyi54sb5WAudjOOtjNiTlYLHSxiwHNYTWJNMSNyDy3IRuiRqQyNSNM1mRqRqeW55SYnkzy6crkKMTyeXTk8qqOXK5duVyqN8uOHl04PJEc55XLryZ5FMc+TPLrPKnkNRz5XLryeVTHHlcu3K5VMceVy7crkVRw4XLtyuTRy4crl2vkcpRx5F8u18jkKON8s3y7WMYRuONjFjvY52IOWJvEi4+XTyksXp08xqQostTy3IkG8a5M8pAtTyZEkWp5XKSMXK5STMPJ5SRhnlYkkcOJBpcrEkVysSQXI5CSV8jlJAcs3ykkzY5+oUmdc7HOwosa56kiX//2Q==);
+      background-repeat: repeat;
+      height: 400px;
+    }
+    img{
+        padding-bottom: 20px;
+    }
+     p:hover{
+      opacity:0.8;
+     }
+     .container {
+       position: relative;
+       width: 50%;
+    }
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #0c0d0c;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+.flex-container2 {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container2 > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+.order-1:hover{ opacity: 0.8;}
+.order-2:hover{opacity: 0.8;}
+.order-3:hover{opacity: 0.8;}
+.order-4:hover{opacity: 0.8;}
+.order-5:hover{opacity: 0.8;}
+.order-6:hover{opacity: 0.8;}
+.order-7:hover{opacity: 0.8;}
+.order-8:hover{opacity: 0.8;}
+.order-9:hover{opacity: 0.8;}
+h3{
+  text-align: center;
+}
+p{
+  color: black;
+  text-align: center;
+}
+* {
+	font-family: 'Montserrat', sans-serif;
+}
+.bg-light {
+	background-color: transparent !important;
+}
+.carousel-item {
+	height: 400px;
+	min-height: 100px;
+}
+.carousel-caption {
+	bottom: 120px;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+}
+.carousel-caption a {
+	text-transform: uppercase;
+	text-decoration: none;
+	background: darkorange;
+	padding: 10px 30px;
+	display: inline-block;
+	color: #000;
+	margin-top: 15px;
+}
+
+.w-100 {
+	height: 400px;
+}
+
+@media only screen and (max-width: 767px) {
+	
+	.carousel-caption {
+		bottom: 165px;
+	}
+	.carousel-caption h5 {
+		font-size: 17px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}}
+.final{height: 100px;}
+* {
+	margin: 0;
+	padding: 0;
+}
+.slider-area {	
+	height: 150px;
+}
+.slider-area h2 {
+	text-align: center;
+	font-family: impact;
+	font-size: 60px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 100px 0 30px 0;
+	color: #fff;
+}
+.wrapper {
+	display: flex;
+	width: 1100px;
+	margin: 0 auto;
+	overflow: hidden;
+	
+	padding: 2.5rem;
+	background:whitesmoke;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.item {
+	animation: animate 25s alternate linear infinite;
+}
+.container:hover .item {
+	animation-play-state: paused;
+}
+@keyframes animate {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		transform: translate3d(-1100px, 0, 0);
+	}
+}
+@media (max-width:767px) {
+	.slider-area h2 {
+		font-size: 30px;
+	}
+	.wrapper {
+		width: 95%;
+		border-radius: 0;
+		padding: 0;}}
+    
+    .it{
+      color: #fff;
+      width: 200px;
+    }
+    .white{
+      color: #f1f1f1;
+    }
+
+    #A{  
+      margin-top: 10px;
+      width: 100%; 
+      background-color: black;
+      height: 250px;
+    }
+    .flex-container{
+        display: flex;
+   }
+   .flex-item1{
+    padding-left: 120px;
+    font-size: 12px;
+   }
+    .overal2 ul{
+      list-style-type: none;
+    }
+    .flex-item2{
+      padding-left: 260px;
+      font-size: 12px;
+    }
+    .flex-item3{
+      padding-left: 250px;
+      padding-right: 50px;
+      font-size: 12px;
+    }
+    .flex-item{
+      padding-left: 50px;
+      font-size: 12px;
+    }
+    .edge{
+      background-color: #100244;
+      height: 40px;
+    }
+    .at last{
+      width: 100%;
+    }
+    .career{
+      border: solid 5px rgb(154, 149, 149);
+      width: 1000px;
+      height: 340px;
+      padding: 35px;
+      margin-left: 150px;
+      justify-content: center;
+      background-image: url(https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg?w=1060&t=st=1689053392~exp=1689053992~hmac=35fd45195a76137f51bc4a6d57a5b1478fd58cd01de9cfaa2ba19f5e7d9240aa);
+      
+    }
+    .BB{
+      margin-left: 550px;
+      background-color: rgb(19, 20, 20);
+      color:white
+    }
+    .m {
+          font-family: Arial, Helvetica, sans-serif;
+        }  
+        .notification {
+          background-color: #0e0e0e;
+          color: rgb(18, 17, 17); 
+          text-decoration: none;
+          margin-top: 20px; 
+          position: relative;
+          display: inline-block;
+          border-radius: 2px;
+        } 
+        .notification .badge {
+          position: absolute;
+          top: -10px;
+          right: -10px;
+          padding: 5px 10px;
+          border-radius: 50%;
+          background-color: red;
+          color: white;
+        }
+        
+  </style>
+</head>
+<body>
+   
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand mx-1" href="#"><img src="https://media.licdn.com/dms/image/C560BAQFWJE_C-kdKdw/company-logo_200_200/0/1678028034138?e=1696464000&v=beta&t=J9jSu8iqswVl319ih78dM8pjxpz1iP9VeiwsXhd_u3Y"alt="not found"width="150px" height="60px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+           <li class="nav-item dropdown mx-1">
+          <a class="nav-link dropdown-toggle" style="color:whitesmoke" href="#" role="button" data-bs-toggle="dropdown">Home</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">About Us </a></li>
+            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+          </ul>
+        </li>
+        </li>
+        <li class="nav-item">
+        <li class="nav-ite dropdown mx-2">
+          <a class="nav-link dropdown-toggle"  style="color:whitesmoke" href="#" role="button" data-bs-toggle="dropdown">E-Learning</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Courses</a></li>
+            <li><a class="dropdown-item" href="#">Login to Dashboard</a></li>
+            <li><a class="dropdown-item" href="#">Student Registration</a></li>
+            <li><a class="dropdown-item" href="#">Instructor Registration</a></li>
+          </ul>
+        </li>    
+        </li>
+        <li class="nav-item">
+           <li class="nav-item dropdown mx-2">
+          <a class="nav-link dropdown-toggle"  style="color:whitesmoke" href="#" role="button" data-bs-toggle="dropdown">All Job's</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Search For Jobs</a></li>
+          </ul>
+        </li>
+        </li> 
+         <li class="nav-item">
+           <li class="nav-item dropdown mx-2">
+          <a class="nav-link dropdown-toggle"  style="color:whitesmoke" href="#" role="button" data-bs-toggle="dropdown">Policy's</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Privacy policy</a></li>
+            <li><a class="dropdown-item" href="#">Refund and Return policy</a></li>
+            <li><a class="dropdown-item" href="#">Terms and Conditions</a></li>
+          </ul>
+        </li></li> 
+         <li class="nav-item">
+           <li class="nav-item dropdown mx-2">
+          <a class="nav-link dropdown-toggle"  style="color:whitesmoke" href="#" role="button" data-bs-toggle="dropdown">Packages</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Job Packages</a></li>
+            <li><a class="dropdown-item" href="#">CV Packages</a></li>
+          </ul>
+        </li>
+        </li> 
+        <li class="nav-item dropdown mx-2">
+          <a class="nav-link"  style="color:whitesmoke" href="#" role="button" >Free Job Posting</a>
+        </li>
+        <a class="nav-link mx-4" href="#"style="rounded-pill"><img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRy_yqexlVSX1GKJoGXmKT0SD4ZJGid-267ro3S3lxVNVhNXZqi"alt="not found" width="40px"height="50px"class="rounded-circle"></a>
+        <li class="nav-item mx-5 float-end"> 
+            <button type="button" class="btn btn-dark" style="color:whitesmoke" data-bs-toggle="modal" data-bs-target="#myModal">
+              Sign in</button></div>
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog ">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <label>Username  : </label><input type="text" placeholder=" email/Phone"><br><br>
+                  <label>Password  : </label><input type="text" placeholder=" password">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">login</button>  
+                </div></div></div></div></li></div></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+         <div class="background">
+         <div class="container mt-4">
+          <img src="https://media.licdn.com/dms/image/D5612AQEzq8mzcy9G2w/article-cover_image-shrink_720_1280/0/1660774093938?e=2147483647&v=beta&t=JTxaHtdRyt4qFFHTSwTsCCvMBU1h3tmkEozCj_b0bw0" alt="Avatar" class="image" style="width:100%">
+          <div class="middle">
+              <div class="d-inline-flex p-3  bg-xs-dark text-white">  
+                <div class="p-2 bg-dark"><input type="search"placeholder="search for jobs"></div>
+                <div class="p-2 bg-dark"><img src="https://cdn.pixabay.com/photo/2013/07/12/14/48/search-148820_640.png" alt="not" width="50px" height="50px"></div> 
+              </div></div></div>
+              <div class="p-5 mx-5"><h3><b>TOP MNC'S HIRING FIND THE ONE THAT’S RIGHT FOR YOU.</b></h3></div>
+              <p class="p"><b>Here,some persons who are placed in top comapnies..Grab the chance!!</b></p><br><br> 
+            <div class="container-fluid mt-2 ">
+              <div class="d-flex mb-3 mx-2">  
+                <div class="p-2 order-1 mx-3 bg-secondary"><img src="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-6-268x268.png" class="rounded-circle" alt="not found"width="200px" height="200px"></div>    
+                <div class="p-2 order-2  mx-3 bg-warning"><img src="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-9-268x268.png" class="rounded-circle" alt="not found"width="200px" height="200px"></div>
+                <div class="p-2 order-3  mx-3 bg-secondary"><img src="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-20-268x268.png" class="rounded-circle" alt="not found"width="200px" height="200px"></div>
+                <div class="p-2 order-4  mx-3 bg-warning"><img src="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-12-268x268.png"class="rounded-circle" alt="not found"width="200px" height="200px"></div>
+                <div class="p-2 order-5  mx-3 bg-secondary"><img src="https://greathire.in/wp-content/uploads/2023/03/Untitled-design-16-268x268.png"class="rounded-circle" alt="not found"width="200px" height="200px"></div>  
+              </div></div></div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <div class="last"></div>
+              <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+                <div class="carousel-indicators">
+                  <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img alt="..." class="d-block w-100" src="https://i.postimg.cc/LsTXqTNZ/1.jpg">
+                    <div class="carousel-caption">
+                      <h5 class="animated bounceInRight" style="animation-delay: 1s"> IT Engineer & Devolper</h5>
+                      <h class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">Fresher</h>
+                       <h class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">2-3 years Experinced</h>          
+                      <p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">Search More</a></p>
+                    </div></div>
+                  <div class="carousel-item">
+                    <img alt="..." class="d-block w-100 " src="https://i.postimg.cc/C1rx7Kyh/2.jpg">
+                    <div class="carousel-caption">
+                      <h5 class="animated bounceInRight" style="animation-delay: 1s">Graphics Design</h5>
+                      <h class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">Fresher</h>
+                      <h class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">2-3 years Experienced</h>            
+                      <p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">Search More</a></p>
+                    </div></div>
+                  <div class="carousel-item">
+                    <img alt="..." class="d-block w-100" src="https://i.postimg.cc/c4nL7ZFW/3.jpg">
+                    <div class="carousel-caption">
+                      <h5 class="animated bounceInRight" style="animation-delay: 1s">Sales & Marketing</h5>
+                      <h class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">Fresher</h>
+                      <h class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">2-3 years Experienced</h>          
+                      <p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">search More</a></p>
+                    </div></div>
+                    <div class="carousel-item">
+                    <img alt="..." class="d-block w-100" src="https://i.postimg.cc/c4nL7ZFW/3.jpg">
+                    <div class="carousel-caption">
+                      <h5 class="animated bounceInRight" style="animation-delay: 1s">BPO & Tellecaller</h5>
+                      <h class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">Fresher</h>
+                      <h class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">2-3 years Experienced</h>          
+                      <p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">search More</a></p>
+                    </div></div>
+                      <div class="carousel-item">
+                      <img alt="..." class="d-block w-100" src="https://i.postimg.cc/c4nL7ZFW/3.jpg">
+                      <div class="carousel-caption">
+                      <h5 class="animated bounceInRight" style="animation-delay: 1s">IT Services & IT Consulting</h5>
+                      <h class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">Fresher</h>
+                      <h class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">2-3 years Experienced</h>            
+                      <p class="animated bounceInRight" style="animation-delay: 3s"><a href="#">search More</a></p>
+                    </div></div>
+                </div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
+              </div>
+              <div class="final">
+                <div class="slider-area">
+                  <div class="wrapper">
+                    <div class="item "><img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRhcCABS_Hg-ATFQ47wtdoTG0rnFBBJ1b1wA&usqp=CAU" width="70px" height="70px"style=margin-right:40px></div>
+                    <div class="item mx-4"><img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3TJPvUrthCtxwm_PV8PMTM2884WFELTfKxg&usqp=CAU"width="70px" height="70px"style=margin-right:40px></div>
+                    <div class="item mx-4"><img alt="" src="https://seeklogo.com/images/I/Infosys-logo-783CD87B31-seeklogo.com.png"width="70px" height="70px"style=margin-right:40px></div>
+                    <div class="item mx-4"><img alt="" src="https://banner2.cleanpng.com/20180517/obq/kisspng-amazon-com-amazon-alexa-retail-amazon-prime-order-amazon-5afd8d9f145d12.3907629815265663030834.jpg"width="70px" height="70px"style=margin-right:40px></div>
+                    <div class="item mx-4"><img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7NE6jZ5n--lwgqrp5YW3VMrpM38VLD1tngQ&usqp=CAU"width="70px" height="70px"style=margin-right:40px></div>
+                    <div class="item mx-4"><img alt="" src="https://seeklogo.com/images/T/tata-motors-logo-5508201279-seeklogo.com.png"width="70px" height="70px"style=margin-right:40px></div>
+                    <div class="item mx-4"><img alt="" src="https://businessyield.com/wp-content/uploads/2022/10/MICROSOFT-LOGO.jpg"width="70px" height="70px"style=margin-right:40px></div>
+                    <div class="item mx-4"><img alt="" src="https://brandongaille.com/wp-content/uploads/2014/04/HP-Company-Logo.jpg"width="70px" height="70px"style=margin-right:40px></div>
+                    <div class="item mx-4"><img alt="" src="https://companieslogo.com/img/orig/WIT_BIG-0de2dc21.png?t=1648406781"width="70px" height="70px"style=margin-right:40px></div>
+                  </div></div></div><br><br><br>
+                  <div class=" mt-3">
+                    <div id="accordion">
+                      <div class="card">
+                        <div class="card-header bg-secondary">
+                          <a class="btn" data-bs-toggle="collapse" href="#collapseOne" style="color:white">
+                            How can I found out who is the hiring manager?
+                          </a>
+                        </div>
+                        <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                          <div class="card-body">
+                            You can get the details of recruiters in employer grid or your dashboard.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header bg-secondary">
+                          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo" style="color:white">
+                             I can't remember user ID/ password can,you reset it?    
+                        </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                          <div class="card-body">
+                            If you forget your login credentials we will support you by providing you password reset button so you can reset your credentials.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header bg-secondary">
+                          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree" style="color:white">
+                          How do I apply for an job opening?  
+                        </a>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                          <div class="card-body">
+                            You can register as candidate in signup form and apply for any job.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header bg-secondary">
+                          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour" style="color:white">
+                         When can I expect to hear from the hiring department?   
+                        </a>
+                        </div>
+                        <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                          <div class="card-body">
+                            If you got selected your application for next process or rejected status.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header bg-secondary">
+                          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive" style="color:white">
+                          What happens when I submit my application?   
+                        </a>
+                        </div>
+                        <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+                          <div class="card-body">
+                           Once we will received your application we will verify and approve it and place in in the website, Hr's who are looking for candidates and if your skills matches with what they are looking for they will contact you on a given contact information.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header bg-secondary">
+                          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSix" style="color:white">
+                           Iam having the trouble with online process Is,there an alternative method to apply? 
+                          </a>
+                        </div>
+                        <div id="collapseSix" class="collapse" data-bs-parent="#accordion">
+                          <div class="card-body">
+                            There is another process that you can visit the offline location or social media pages to get more information about the company or job post.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="career">
+                      <div><h3><b> Consulting With Experts For Free.</b></h3></div>
+                      <div><b>Choose Career Wisely! with experts advice…Career cannot be chosen based on the opinion of their parents, cousins, neighbours, friends, or teacher because they will guide you based on their own experience regarding a particular career option. But career guidance programs give you the best fit career matches on multiple parameters such as interest, personality, aptitude, and emotional quotient.
+                        Our experts/career guide help you acquire the right knowledge and information necessary to identify a better-fit career. The career guidance process provides you with an expert and qualified guide who can understand you and your interests with industrial experience in IT and Non-IT industries.
+                        It also helps a professional in switching to the career of their choice. It will also guide a student if he wants to go abroad for higher studies or much more.</b>
+                        </div>
+                        <div class="BB"><input type="text"placeholder="Click here.."></div>
+                    </div>
+                  <div id="A">
+                    <div class="flex-container">
+                      <div class="flex-item">
+                      <ul type="none">
+                        <li style="margin-top: 10px;color: white;"><b>About Us</b></li>
+                        <li><a href="" style="margin-top:3; text-decoration: none; color: white ;">
+                          Discover the best way to find jobs with greathire</a></li>
+                        <li><a href="" style="text-decoration: none; color: white;">Office Hours: 24*7</li>
+                        <li><a href="" style="text-decoration: none; color: white;">Customer Support</a></li>  
+                      </ul>
+                    </div>
+                    <div class="flex-item1">
+                      <ul type="none">
+                        <li style="margin-top: 10px;color: white;"><b>Jobs</b></li>
+                        <li><a href="" style="text-decoration: none; color: white;">Job Packages</a></li>
+                        <li><a href="" style="text-decoration: none; color: white;">Free Job Posting</a></li>
+                        <li><a href="" style="text-decoration: none; color: white;">Job Listing</a></li>
+                        <li><a href="" style="text-decoration: none; color: white;">Job Style Grid</a></li>
+                        <li><a href="" style="text-decoration: none; color: white;">Employers Listing</a></li>
+                      </ul>
+                    </div>
+                    <div class="flex-item2">
+                      <ul type="none">
+                        <li style="margin-top: 10px;color: white;"><b>Employers</b></li>
+                        <li><a href="" style="text-decoration: none; color: white;">Employer Grid</a></li>
+                        <li><a href="" style="text-decoration: none; color: white;">Job Listing</a></li>
+                        <li><a href="" style="text-decoration: none; color: white;">Job Posting</a></li>
+                        <li><a href="" style="text-decoration: none; color: white;">Job Grid</a></li>
+                        <li><a href="" style="text-decoration: none; color: white;"></a>Job Style</li>
+                      </ul>
+                  </div>
+                  <div class="flex-item3">
+                    <ul type="none">
+                      <li style="margin-top: 10px;color: white; justify-content: space-around;"><b>Jobs By City</b></li>
+                      <li><a href="" style="text-decoration: none; color: white;">Job Packages</a></li>
+                      <li><a href="" style="text-decoration: none; color: white;">Job Listing</a></li>
+                      <li><a href="" style="text-decoration: none; color: white;">Free Job Posting</a></li>
+                      <li><a href="" style="text-decoration: none; color: white;">Employers Listing</a></li>
+                      <li><a href="" style="text-decoration: none; color: white;">Employers Grid</a></li>
+                    </ul>
+                </div></div>
+
+                <div class="at last bg-dark">
+                  <div class="container-fluid mt-2">
+                    <div class="row">
+                      <div class="col-sm-2 bg-dark text-white p-2 mx-2 ">
+                      <a><img src="https://i.pinimg.com/474x/9f/c9/57/9fc957ca56e61be1ab5dd7d2fdc0c34a.jpg" alt="" class="mt-2"width="50px" height="60px">contact@greathire.in</a> 
+                      </div>
+                      <div class="col-sm-2 bg-dark text-white p-2 mx-4">
+                        <a><img src="https://t3.ftcdn.net/jpg/00/95/99/06/240_F_95990605_gy6vaYsKW6NMXThcZzTtH5EJa4MS4pqb.jpg" alt="" class="mt-2"width="40px" height="50px">8328192093</a>  
+                      </div>
+                      <div class="col-sm-2 bg-dark text-white p-2 mx-4">
+                        <a><img src="https://i.pinimg.com/474x/cf/70/94/cf7094bb684970a120724342d0da5189.jpg" alt="" class="mt-2"width="40px" height="50px">Hyderabad</a>  
+                      </div>
+                      <div class="col-sm-2 bg-dark text-white p-2 mx-3">
+                        <a><img src="https://i.pinimg.com/474x/5a/7d/84/5a7d84bcf5d0df934c4410f23f22c93c.jpg" alt="" class="mt-2"width="50px" height="60px">Slot Book</a>  
+                      </div>
+                      <div class="col-sm-2 bg-dark text-white p-2 style:justify-content-end">
+                        <a><img src="https://i.pinimg.com/474x/6a/64/e0/6a64e0dc22815cf11b93bd86b714f0ff.jpg" alt="" class="mt-2"width="50px" height="60px">Follow Us</a>  
+                      </div></div></div></div></div>
+              
+
+
+
+
+
+              
+
+
+
+
+
+
+              
+              
+
+
+
+
+
+            
+
+
+
+
+
+
+
+           
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+              
+              
+
+            
+</body>
+</html>
+
